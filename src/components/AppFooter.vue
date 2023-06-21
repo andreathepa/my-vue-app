@@ -2,36 +2,41 @@
 export default {
     data(){
         return{
-            icons: 
+            socials: 
             [
                 {
-                    title: 'DIGITAL COMICS',
-                    icona: "./src/assets/img/buy-comics-digital-comics.png",
+                    label: '',
+                    href: '#',
+                    logo_social: './src/assets/img/footer-facebook.png',
                     active: false,
                 },
                 {
-                    title: 'DC MERCHANDISE',
-                    icona: "./src/assets/img/buy-comics-merchandise.png",
+                    label: '',
+                    href: '#',
+                    logo_social: './src/assets/img/footer-periscope.png',
                     active: false,
                 },
                 {
-                    title: 'SUBSCRIPTION',
-                    icona: "./src/assets/img/buy-comics-subscriptions.png",
+                    label: '',
+                    href: '#',
+                    logo_social: './src/assets/img/footer-pinterest.png',
                     active: false,
                 },
                 {
-                    title: 'COMIC SHOP LOCATOR',
-                    icona: "./src/assets/img/buy-comics-shop-locator.png",
+                    label: '',
+                    href: '#',
+                    logo_social: './src/assets/img/footer-twitter.png',
                     active: false,
                 },
                 {
-                    title: 'DC POWER VISA',
-                    icona: "./src/assets/img/buy-dc-power-visa.svg",
+                    label: '',
+                    href: '#',
+                    logo_social: './src/assets/img/footer-youtube.png',
                     active: false,
-                },
+                }
             ]
         };
-    },
+    }
     
 }
 </script>
@@ -49,13 +54,14 @@ export default {
                         SIGN-UP NOW!
                     </button>
                 </div>
-                <div>
+                <div class="flex align-items-center">
+                    <div class="follow"><a href="">FOLLOW US</a></div>
                     <ul>
-                        <li>FOLLOW US</li>
-                        <li>ciao</li>
-                        <li>ciao</li>
-                        <li>ciao</li>
-                        <li>ciao</li>
+                        <li v-for="(social, index) in socials" :key="index">
+                        <a :href="social.href" :active="social.active ? 'active' : ''">
+                            <div><img :src="social.logo_social" alt=""></div>
+                        </a>
+                    </li>
                     </ul>
                 </div>
            </div> 
@@ -66,11 +72,6 @@ export default {
 
 <style lang="scss" scoped>
 
-    ul li{
-        display: inline-block;
-        padding: 30px 20px;
-    }
-    
     .footer_bg{
         position: relative;
         overflow: hidden;
@@ -115,5 +116,39 @@ export default {
                 
             }
 
+        .follow{
+            font-size: 25px;
+            font-weight: 600;
+
+            a{
+                color: rgb(0, 89, 255);
+            }
+
+            a:hover{
+                color: rgb(255, 255, 255);
+
+            }
+
+            
+        }
+        
+        .active{
+        border-bottom: 2px solid rgb(255, 255, 255);
+        }
+
+        ul li{
+        display: inline-block;
+        padding: 30px 20px;
+        
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.205);
+                
+            }
+
+            
     }
+    
+    }
+
+    
 </style>

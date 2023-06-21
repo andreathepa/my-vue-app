@@ -23,6 +23,36 @@ export default {
                     label: 'Voce 4',
                     href: '#',
                     active: false,
+                },
+                {
+                    label: 'Voce 5',
+                    href: '#',
+                    active: false,
+                },
+                {
+                    label: 'Voce 6',
+                    href: '#',
+                    active: false,
+                },
+                {
+                    label: 'Voce 7',
+                    href: '#',
+                    active: false,
+                },
+                {
+                    label: 'Voce 8',
+                    href: '#',
+                    active: false,
+                },
+                {
+                    label: 'Voce 9',
+                    href: '#',
+                    active: false,
+                },
+                {
+                    label: 'Voce 10',
+                    href: '#',
+                    active: false,
                 }
             ]
         };
@@ -33,7 +63,7 @@ export default {
 
 <template>
     <header class="container">
-        <div class="flex justify-content-between">
+        <div class="flex justify-content-between align-items-center">
             <img src="/dc-logo.png" alt="">
             <nav>
                 <ul>
@@ -63,9 +93,11 @@ export default {
         display: inline-block;
         padding: 30px 20px;
         
+        
             a{
-                font-size: 20px;
+                font-size: 15px;
                 font-weight: 600px;
+                text-transform: uppercase;
             }
 
             &:hover a{

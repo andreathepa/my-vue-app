@@ -40,11 +40,11 @@ export default {
     <div>
         <div class="container_icons">
             <div class="footer_blue flex justify-content-between align-items-center">
-                 <div class="flex align-items-center margin-left" v-for="(icon, index) in icons" :key="index">
+                 <a class="flex align-items-center margin-left" v-for="(icon, index) in icons" :key="index" href="#">
 
                     <div class="image_icon"><img :src="icon.icona" alt=""></div>
                     <div class="align-items-center margin-left">{{ icon.title }}</div>
-                 </div>
+                 </a>
             </div>
         </div>
     </div>
@@ -54,19 +54,17 @@ export default {
 
     .container_icons{
         background-color: rgb(66, 100, 253);
-    }
+        
+        .footer_blue{
+            height: 150px;
+            margin: 0 auto;
+            max-width: 1300px;
+            color:white;
+        }
 
-    ul li{
-        display: inline-block;
-        padding: 30px 20px;
-    }
-    .footer_blue{
-        height: 150px;
-        margin: 0 auto;
-        max-width: 1300px;
-        color:white;
-
-      
+        a{
+            color: rgb(255, 255, 255);
+        }
         img{
             width: 60px;
         }
