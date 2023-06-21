@@ -1,13 +1,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue'
+import AppBlueBand from './components/AppBlueBand.vue';
+import AppFooter from './components/AppFooter.vue';
 
 
 export default {
   components:{
     AppHeader,
     AppMain,
+    AppBlueBand,
     AppFooter
   }
 }
@@ -17,6 +19,7 @@ export default {
   <div>
     <AppHeader />
     <AppMain />
+    <AppBlueBand />
     <AppFooter />
   </div>
 </template>
