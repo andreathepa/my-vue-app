@@ -1,6 +1,10 @@
 <script>
-export default {
+import AppComics from './AppComics.vue'
 
+export default {
+    components:{
+    AppComics
+  }
 }
 </script>
 
@@ -9,7 +13,9 @@ export default {
         <div class="jumbotron">
             <img src="../assets/img/jumbotron.jpg" alt="">
         </div>
-        <div class="prova">Content blue goes here</div>
+        <div class="prova padding">
+            <AppComics />
+        </div>
     </div>
 </template>
 
@@ -31,7 +37,6 @@ export default {
         }
     }   
     .prova{
-        height: 1000px;
         background-color: black;
     }
 

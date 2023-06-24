@@ -10,7 +10,7 @@ export default {
     AppHeader,
     AppMain,
     AppBlueBand,
-    AppFooter
+    AppFooter,
   }
 }
 </script>

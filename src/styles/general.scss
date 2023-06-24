@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    color: white
 }
 
 
@@ -23,6 +24,10 @@ a{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .justify-content-between{
     justify-content: space-between;
 }
@@ -37,4 +42,9 @@ a{
 
 .margin-left{
     margin-left: 10px;
+}
+
+.padding{
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
