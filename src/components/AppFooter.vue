@@ -44,15 +44,65 @@ export default {
 <template lang="">
     <div>
         <div class="footer_bg">
-             <img src="../assets/img/footer-bg.jpg" class="bg_img" alt="">
-             <img src="../assets/img/dc-logo-bg.png" class="bg_logo" alt="">
+            <div>
+                <img src="../assets/img/footer-bg.jpg" class="bg_img" alt="">
+                <img src="../assets/img/dc-logo-bg.png" class="bg_logo" alt="">
+
+            </div>
+            <div class="list_footer">
+                <div class="list_one">
+                    <ul>
+                        <li><strong>Voce 1</strong></li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        
+                    </ul>
+    
+                    <ul>
+                        <li><strong>Voce 2</strong></li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        
+                    </ul>
+
+                </div>
+                <div class="list_two">
+                    <ul>
+                        <li><strong>Voce 3</strong></li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        
+                    </ul>
+                </div>
+                <div class="list_two">
+                    <ul>
+                        <li><strong>Voce 4</strong></li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                        <li>Voce</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="container_sign_up">
            <div class="sign_up flex justify-content-between align-items-center">
-                <div class="">
-                    <button class="">
-                        SIGN-UP NOW!
-                    </button>
+                <div class="button_sign">
+                    SIGN-UP NOW!
                 </div>
                 <div class="flex align-items-center">
                     <div class="follow"><a href="">FOLLOW US</a></div>
@@ -97,6 +147,31 @@ export default {
         
     }
 
+    .list_footer{
+        z-index: 200;
+        position: absolute;
+        top: 8%;
+        left: 15%;
+        display: flex;
+        text-transform: uppercase;
+
+        
+        ul{
+            margin-bottom: 50px;
+            margin-right: 50px;
+        }
+
+        ul li{
+            list-style: none;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        li:hover{
+            background-color: rgba(255, 255, 255, 0.322);
+        }
+    }
+
     .container_sign_up{
         background-color: rgb(37, 37, 37);
 
@@ -105,7 +180,7 @@ export default {
                 margin: 0 auto;
                 max-width: 1320px;
     
-                button{
+                .button_sign{
                     padding: 15px;
                     border: 1px solid blue;
                     cursor: pointer;
@@ -115,6 +190,10 @@ export default {
     
                 
             }
+
+        .button_sign:hover{
+            background-color: rgb(58, 58, 218);
+        }
 
         .follow{
             font-size: 25px;
